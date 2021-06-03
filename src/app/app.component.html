@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>String Generator</h2>
+    <p [ngClass]="{
+        'red': textClass == 1,
+        'hidden': textClass == 2,
+        'blue': textClass == 3
+    }">{{text}}</p>
+    
+
+    <button type="button" class="btn btn-primary" (click)="stop()">Reset Generator</button>
+</div>
